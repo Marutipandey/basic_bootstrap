@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="IncomeTax.css">
+    <title>Hello, world!</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 bg-primary p-1">
+                <h4 style="margin-left: 40px;"><img
+                        src="https://img.lovepik.com/free-png/20210926/lovepik-calculator-icon-free-vector-illustration-material-png-image_401495032_wh1200.png"
+                        alt="" style="width: 20px;"> INCOME AND TAX CALCULATOR</h4>
+            </div>
+        </div>
+
+        <div class="row form-control" style="background-color: rgb(147, 154, 161);">
+            <label class="col-sm-9 col-xs-12">
+                Assessment Year
+            </label>
+            <div class="col-sm-3 col-xs-12" style="margin-left: 44rem;">
+                <select>
+                    <option selected="selected" value="Select">Select</option>
+                    <option value="2022-23">2023-24</option>
+                    <option value="2022-23">2022-23</option>
+                    <option value="2021-22">2021-22</option>
+                    <option value="2020-21">2020-21</option>
+                    <option value="2019-20">2019-20</option>
+                    <option value="2018-19">2018-19</option>
+                    <option value="2017-18">2017-18</option>
+                    <option value="2016-17">2016-17</option>
+                    <option value="2015-16">2015-16</option>
+                    <option value="2014-15">2014-15</option>
+                    <option value="2013-14">2013-14</option>
+                    <option value="2012-13">2012-13</option>
+                    <option value="2011-12">2011-12</option>
+                    <option value="2010-11">2010-11</option>
+                    <option value="2010-11">2010-11</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row form-control ">
+            <label class="col-sm-9 col-xs-12">
+                Tax Payer
+            </label>
+            <div class="col-sm-3 col-xs-12" style="margin-left: 44rem;">
+                <select>
+                    <option selected="selected" value="Select">Select</option>
+                    <option value="Individual">Individual</option>
+                    <option value="HUF">HUF</option>
+                    <option value="AOPs/BOI">AOPs/BOI</option>
+                    <option value="Domestic Company">Domestic Company</option>
+                    <option value="Foreign Company">Foreign Company</option>
+                    <option value="Firms">Firms</option>
+                    <option value="LLP">LLP</option>
+                    <option value="Co-operative Society">Co-operative Society</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row form-control" style="background-color: rgb(147, 154, 161);">
+            <label class="col-sm-9 col-xs-12">
+                Tax Payer
+            </label>
+            <div class="col-sm-3 col-xs-12" style="margin-left: 44rem;">
+                <select>
+                    <option value="Select">Select</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Senior Citizen">Senior Citizen</option>
+                    <option value="Super Senior Citizen">Super Senior Citizen</option>
+                </select>
+            </div>
+        </div>
+
+
+        <div class="row form-control">
+            <label class="col-sm-9 col-xs-12">
+                Residential Status
+            </label>
+            <div class="col-sm-3 col-xs-12" style="margin-left: 44rem;">
+                <select>
+                    <option value="Select">Select</option>
+                    <option value="Resident">Resident</option>
+                    <option value="Non-Resident">Non-Resident</option>
+                    <option value="Not Ordinary Resident">Not Ordinary Resident</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row form-control" style="background-color: rgb(147, 154, 161);">
+            <div id="divLiteral7">
+                <label class="col-sm-9 col-xs-12 control-label">
+                    Income from Salary
+                </label>
+            </div>
+            <div class="col-sm-3 col-xs-12" style="margin-left: 44rem;">
+                <input type="text" maxlength="18" class="form-control numericinput"
+                    onchange="calculatededuction();calculateResult();"
+                    onkeypress="javascript:return chkIntInput(this,event)"
+                    onblur="javascript:ValidateAndFormatNumberControl(this)" style="border-color: rgb(255, 0, 0);">
+            </div>
+        </div>
+
+       
+        
+           
+
+        <div class="row form-control">
+            <div class="col">
+                <p>Income From House Property</p>
+                <ul>
+                    <li>
+                        <div>
+                            <h5>i</h5>
+                            <p class="content">Note: In case the assesse is opted for Section 115BAC, Loss under head
+                                House Property for rented
+                                house shall not be allowed to set off from any other head of income and cannot be
+                                carried forward</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <div style="margin-left:280px;">
+                    <div class="form-control" id="box" style="background-color: rgb(147, 154, 161);">
+                        Box 1
+                        <div id="divhide202122">
+                            <div class="form-group alternative-g-grey-row">
+                                <label class="col-sm-12 col-xs-12 control-label">
+                                    <span>a. </span>
+                                    Income from Self-occupied Property
+                                </label>
+                            </div>
+                            <div class="form-group alternative-g-grey-row">
+                                <label class="col-sm-12 col-xs-12 control-label">
+                                    Interest Paid/Payable on Housing Loan
+                                </label>
+                            </div>
+                            <div class="form-group alternative-g-grey-row">
+                                <label class="col-sm-9 col-xs-12 control-label">
+                                    1. Interest on Housing Loan
+                                </label>
+                                <div class="col-sm-3 col-xs-12">
+                                    <input
+                                        name="ctl00$SPWebPartManager1$g_1a7c992e_28f5_4dff_a553_9a619607f0db$txtsointerest"
+                                        type="text" maxlength="18"
+                                        id="ctl00_SPWebPartManager1_g_1a7c992e_28f5_4dff_a553_9a619607f0db_txtsointerest"
+                                        class="form-control numericinput" onchange="calcHP();"
+                                        onkeypress="javascript:return chkIntInput(this,event)"
+                                        onblur="javascript:ValidateAndFormatNumberControl(this)"
+                                        style="border-color: rgb(255, 0, 0);">
+                                </div>
+                            </div>
+                            <div class="form-group alternative-g-grey-row">
+                                <label class="col-sm-9 col-xs-12 control-label">
+                                    Income from self-occupied house property
+                                </label>
+                                <div class="col-sm-3 col-xs-12">
+                                    <input name="ctl00$SPWebPartManager1$g_1a7c992e_28f5_4dff_a553_9a619607f0db$txtso"
+                                        type="text"
+                                        id="ctl00_SPWebPartManager1_g_1a7c992e_28f5_4dff_a553_9a619607f0db_txtso"
+                                        class="form-control dsbldinpt numericinput"
+                                        onkeypress="javascript:return lockcontrol()">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="col-sm-12 col-xs-12 control-label">
+                                <span>b. </span>
+                                Income from Let-out Property
+                            </label>
+                        </div>
+                        <div class="form-group alternative-g-grey-row">
+                            <label class="col-sm-9 col-xs-12 control-label">
+                                1. Annual Letable Value/Rent Received or Receivable
+                            </label>
+                            <div class="col-sm-3 col-xs-12">
+                                <input
+                                    name="ctl00$SPWebPartManager1$g_1a7c992e_28f5_4dff_a553_9a619607f0db$txtlogrossannualvalue"
+                                    type="text" maxlength="18"
+                                    id="ctl00_SPWebPartManager1_g_1a7c992e_28f5_4dff_a553_9a619607f0db_txtlogrossannualvalue"
+                                    class="form-control numericinput" onchange="calcHP();"
+                                    onkeypress="javascript:return chkIntInput(this,event)"
+                                    onblur="javascript:ValidateAndFormatNumberControl(this)">
+                            </div>
+                        </div>
+                        <div class="form-group alternative-g-grey-row">
+                            <label class="col-sm-9 col-xs-12 control-label">
+                                2. Less: Municipal Taxes Paid During the Year
+                            </label>
+                            <div class="col-sm-3 col-xs-12">
+                                <input
+                                    name="ctl00$SPWebPartManager1$g_1a7c992e_28f5_4dff_a553_9a619607f0db$txtlomunicpaltax"
+                                    type="text" maxlength="18"
+                                    id="ctl00_SPWebPartManager1_g_1a7c992e_28f5_4dff_a553_9a619607f0db_txtlomunicpaltax"
+                                    class="form-control numericinput" onchange="calcHP();"
+                                    onkeypress="javascript:return chkIntInput(this,event)"
+                                    onblur="javascript:ValidateAndFormatNumberControl(this)">
+                            </div>
+                        </div>
+                        <div class="form-group alternative-g-grey-row">
+                            <label class="col-sm-9 col-xs-12 control-label">
+                                3. Less:Unrealized Rent
+                            </label>
+                            <div class="col-sm-3 col-xs-12">
+                                <input
+                                    name="ctl00$SPWebPartManager1$g_1a7c992e_28f5_4dff_a553_9a619607f0db$txtunrealizedrent"
+                                    type="text" maxlength="18"
+                                    id="ctl00_SPWebPartManager1_g_1a7c992e_28f5_4dff_a553_9a619607f0db_txtunrealizedrent"
+                                    class="form-control numericinput" onchange="calcHP();"
+                                    onkeypress="javascript:return chkIntInput(this,event)"
+                                    onblur="javascript:ValidateAndFormatNumberControl(this)">
+                            </div>
+                        </div>
+                        <div class="form-group alternative-g-grey-row">
+                            <label class="col-sm-9 col-xs-12 control-label">
+                                4. Net Annual Value (1-(2+3))
+                            </label>
+                            <div class="col-sm-3 col-xs-12">
+                                <input
+                                    name="ctl00$SPWebPartManager1$g_1a7c992e_28f5_4dff_a553_9a619607f0db$txtlonetannualvalue"
+                                    type="text"
+                                    id="ctl00_SPWebPartManager1_g_1a7c992e_28f5_4dff_a553_9a619607f0db_txtlonetannualvalue"
+                                    class="form-control dsbldinpt numericinput"
+                                    onkeypress="javascript:return lockcontrol()">
+                            </div>
+                        </div>
+                        <div class="form-group alternative-g-grey-row">
+                            <label class="col-sm-12 col-xs-12 control-label">
+                                Less: Deductions from Net Annual Value
+                            </label>
+                        </div>
+                        <div class="form-group alternative-g-grey-row">
+                            <label class="col-sm-9 col-xs-12 control-label">
+                                i. Standard Deduction @ 30% of Net Annual Value
+                            </label>
+                            <div class="col-sm-3 col-xs-12">
+                                <input
+                                    name="ctl00$SPWebPartManager1$g_1a7c992e_28f5_4dff_a553_9a619607f0db$txtstabdarddeduction"
+                                    type="text"
+                                    id="ctl00_SPWebPartManager1_g_1a7c992e_28f5_4dff_a553_9a619607f0db_txtstabdarddeduction"
+                                    class="form-control dsbldinpt numericinput"
+                                    onkeypress="javascript:return lockcontrol()">
+                            </div>
+                        </div>
+                        <div class="form-group alternative-g-grey-row">
+                            <label class="col-sm-9 col-xs-12 control-label">
+                                ii. Interest on Housing Loan
+                            </label>
+                            <div class="col-sm-3 col-xs-12">
+                                <input
+                                    name="ctl00$SPWebPartManager1$g_1a7c992e_28f5_4dff_a553_9a619607f0db$txtlointerest"
+                                    type="text" maxlength="18"
+                                    id="ctl00_SPWebPartManager1_g_1a7c992e_28f5_4dff_a553_9a619607f0db_txtlointerest"
+                                    class="form-control numericinput" onchange="calcHP();"
+                                    onkeypress="javascript:return chkIntInput(this,event)"
+                                    onblur="javascript:ValidateAndFormatNumberControl(this)">
+                            </div>
+                        </div>
+                        <div class="form-group alternative-g-grey-row">
+                            <label class="col-sm-9 col-xs-12 control-label">
+                                ii. Interest on Housing Loan
+                            </label>
+                            <div class="col-sm-3 col-xs-12">
+                                <input
+                                    name="ctl00$SPWebPartManager1$g_1a7c992e_28f5_4dff_a553_9a619607f0db$txtlointerest"
+                                    type="text" maxlength="18"
+                                    id="ctl00_SPWebPartManager1_g_1a7c992e_28f5_4dff_a553_9a619607f0db_txtlointerest"
+                                    class="form-control numericinput" onchange="calcHP();"
+                                    onkeypress="javascript:return chkIntInput(this,event)"
+                                    onblur="javascript:ValidateAndFormatNumberControl(this)">
+                            </div>
+                        </div>
+                    </div>
+                    <button id="btn" class="bg-dark rounded-pill" style="color: antiquewhite;">Hide div</button>
+                    <script src="iindex.js"></script>
+                </div>
+            </div>
+            <div class="col">
+                <div class="col-sm-3 col-xs-12" style="margin-left:685px;">
+                    <input type="text" maxlength="18" class="form-control numericinput">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

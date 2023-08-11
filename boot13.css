@@ -1,0 +1,27 @@
+.container{
+    border: 2px solid black;
+}
+.row{
+    border: 2px solid blue;
+    height: 600px;
+}
+.orange{
+    background-color: aqua;
+    border: 2px solid black;
+}
+.green{
+    background-color: palevioletred;
+    border: 2px solid black;
+}
+.pink{
+    background-color: yellowgreen;
+    border: 2px solid black;
+}
+.yellow{
+    background-color: rgb(81, 78, 78);
+    border: 2px solid black;
+}
+.blue{
+    background-color: rgb(193, 12, 12);
+    border: 2px solid black;
+}

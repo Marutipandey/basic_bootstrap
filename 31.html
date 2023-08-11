@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid red;
+        }
+      /*  div li p{
+            color:green;
+            background-color: palevioletred;
+        }   */
+
+ /*       div > p{           div ke andar direct p ho ye follow hoga 
+            color:green;
+            background-color: palevioletred;
+        }     */
+
+        div +p{  /*if before div tag then p tag ,then this rule is apply. */
+            color: white;
+            background-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            <ul>
+                <li><p>this is a li tag</p></li>    
+            </ul>
+            <p>this is a div p tag</p>
+        </div>
+        <p>this is a second div tag</p>
+    </div>
+    <p>this is a without div tag</p>
+</body>
+</html>

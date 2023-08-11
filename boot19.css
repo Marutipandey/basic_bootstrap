@@ -1,0 +1,15 @@
+.container{
+    border: 2px solid black;
+}
+.row{
+    border: 2px solid red;
+}
+.pink{
+    background-color: aqua;
+}
+.green{
+background-color: rgb(193, 129, 33);
+}
+.orange{
+background-color: rgb(31, 123, 204);
+}

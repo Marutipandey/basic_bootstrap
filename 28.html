@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            
+            width: 550px;
+            height: 544px;
+       /*  flex-direction: column;  esase sabhi column me aa jayenge */ 
+       /*   flex-direction: row-reverse;  esase sabhi sabhi element reverse set ho jayenge me aa jayenge */
+       /*   flex-direction: column-reverse;  */ 
+           flex-direction: row;  
+           display: flex;  /*display already default  rowwise set hota hai*/
+           flex-wrap: wrap;
+           justify-content: center;
+         /* justify-content: space-between;   esame corner me space nahi hoga, baki sabame equal space hoga*/
+           justify-content: space-evenly;
+           align-items: center;
+           
+       /*    align-items: flex-end; */
+           align-items: flex-start; 
+
+        }
+        .item{
+            border: 2px solid tomato;
+            padding: 3px;
+            color: red;
+            margin: 2px;
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+        }
+        #item1{
+               flex-grow: 2;
+               flex-shrink: 2;
+        }
+        #item2{
+            flex-grow: 5;
+            flex-shrink: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="item1">one</div>
+        <div class="item" id="item2">two</div>
+        <div class="item" id="item3">three</div>
+        <div class="item" id="item4">four</div>
+        <div class="item" id="item5">five</div>
+        <div class="item" id="item6">six</div>
+        <div class="item" id="item7">seven</div>
+        <div class="item" id="item8">eight</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Crimson+Text:ital@0;1&display=swap");
+body{
+    font-family: 'Baloo Bhai 2', cursive;
+    
+}
+.navbar{
+    box-shadow: 0rem 0.0923rem 1rem green;
+}
+.navbar-brand{
+    margin: 0px;
+    padding: 0px;
+}
+.main-btn{
+    background-color: green;
+    padding-bottom: 0.4rem;
+    padding-top: 0.4rem;
+    
+}
+.main-btn:hover{
+    color: black;
+background-color: white;
+}
+a:hover{
+    color: aliceblue;
+    background-color: rgb(14, 167, 88);
+}
+ul,ol{
+    margin: 0px;
+    padding: 0px;
+}
+.nav-link {
+    color: green;
+}
+.container-fluid{
+    width: 100%;
+    background: url(img/backgroundimg/bg7.jpg);
+    background-size: cover;
+    padding-left: 8rem;
+    padding-top: 6rem;
+    padding-bottom: 20rem;
+    padding-right: 2rem;
+}
+.counter-section{
+    background-color: rgb(103, 183, 38);
+    padding: 2rem 0rem;
+}
+.counter-section p{
+    color: black;
+    text-transform: uppercase;
+}
+.btn{
+    background-color: green;
+    color: black;
+    border:2px solid black;
+    
+}
+.btn:hover{
+    background-color: whitesmoke;
+    border:2px solid green
+    
+}
+.about-section .card,
+.about-section .card img{
+border-radius: 2rem;
+margin-top: 50px;
+}
+.about-section .text-sec{
+    padding-left: 2rem;
+}
+
+.food-type{
+    padding-top: 3rem ;
+
+}
+
+.food-type ul li{
+     font-size: 1rem;
+    line-height: 32px;
+    position: relative;
+    margin-left: 30px;
+
+}
+
+
+
+/* .food-type ul li::before{
+    font-size: 1rem;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900; 
+    color: green;
+    position: absolute;
+    left: 2.3rem;
+    padding-right: 2rem;
+    vertical-align: middle; 
+
+}*/
+
+.food-type ul li img{
+    padding-right: 10px;
+    vertical-align: middle;
+}
+
+.story-section{
+    width: 100%;
+    height: 37rem;
+    padding-top: 10rem;
+    padding-left: 0rem;
+    padding-right: 12rem;
+    padding-bottom: 10rem;
+    margin-bottom: 0px;
+    margin-top: 2rem;
+    margin-right:2rem ;
+    
+    text-align: center;
+    background: url('img/backgroundimg/bg4.webp')no-repeat center;
+    background-size: cover;
+}
+.explore-foods{
+    margin-top: 100px;
+    margin-bottom: 5rem;
+}
+.explore-foods h2{
+    margin-top: 80px;
+}
+
+.explore-foods .card{
+    border: none;
+    background-color: transparent;
+    border-radius: 0.934rem;
+
+}
+.explore-foods .card img{
+    border-radius: 0.934rem;
+    object-fit: cover;
+}
+.explore-foods .card span{
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: black;
+    border-bottom: 2px solid green;
+    margin-bottom: 10px;
+}
+.explore-foods .card span del{
+    color: gray;
+    margin-left: 0.5rem;
+}
+.explore-foods .card p{
+    margin-bottom: 5px;
+}
+
+
+
+
+.testimonial-section{
+    background-color: green;
+    padding-bottom: 0rem;
+    height: 38.35rem;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    padding-top: 0.0023rem;
+
+}
+.testimonial-section .carousel-item{
+    margin-top: 2rem;
+    padding: 10rem 5rem;
+    background-color: white;
+    border-radius: 1rem;
+    text-align: center;
+    
+}
+.testimonial-section .carousel-caption img{
+    max-width: 5rem;
+    border-radius: 50%;
+    padding: 0.3125rem;
+    margin: auto;
+}
+.testimonial-section .carousel-caption p{
+    font-size: 1.3rem;
+    line-height: 2.06rem;
+    padding: 0 11% 0.625rem;
+    color: black;
+}
+.testimonial-section .carousel-caption h5{
+    color: rgb(84, 3, 26);
+}
+.testimonial-section .carousel-indicators{
+    bottom: -2.534rem;
+}
+.testimonial-section .carousel-indicators button{
+width: 15px;
+height: 15px;
+outline: none;
+border-radius: 50%;
+border: none;
+margin-right: 1rem;
+opacity: 2;
+background-color: white;
+}
+.testimonial-section .carousel-indicators button.active{
+    opacity: 2;
+    background-color: rgb(201, 65, 79);
+}
+.faq-section{
+    height: 35.24rem;
+    margin-bottom: 6rem;
+}
+.faq-section h2{
+    color: green;
+    margin-top: 4rem;
+
+}
+.faq-section h4 {
+ color: green;
+}
+
+.book-food{
+    width: 100%;
+    background: url('img/backgroundimg/bg12.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0 71.91px;
+    padding: 4.5rem 0;
+}
+.book-food h4{
+    color: black;
+}
+.Newsletter{
+    width: 55%;
+    margin: 0 auto; 
+
+}
+.Newsletter h2{
+    color: green;
+    margin-top: 5rem;
+
+}
+.Newsletter .form-control{
+    height: 2.525rem;
+    padding: 0 1.25rem;
+    font-size: 0.875rem;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    border: 0.235rem solid green;
+    color: black;
+    font-weight: 700;
+
+}
+.Newsletter .form-control:hover,
+.Newsletter .form-control:focus{
+outline: none;
+box-shadow: none;
+border-color: green;
+}

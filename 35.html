@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --box-color: yellow; /*ese kahi bhi inherrit kar sakati hu   */
+         /*   --primary-color:red;
+              --secondry-color:rgb(219, 18, 51);  ese need ke anusar use kar sakati hu */
+        }
+        .box{
+            --box-color: blue;
+            width: 200px;
+            height: 200px;
+            background-color: var(--box-color);
+            border: 2px solid red;
+            box-shadow: 5px 8px var(--box-color);
+            margin: 2px 9px;
+        }
+        .container{
+           /* --box-color:rgb(109, 0, 128);  */
+            display: flex;
+            background-color: var(--box-color);
+        }
+    </style>
+</head>
+<body>
+     <div class="container">
+         <div class="box">
+             Radhe-Shyam
+         </div>
+         <div class="box">
+            Radhe-Shyam
+        </div>
+        <div class="box">
+            Radhe-Shyam
+        </div>
+     </div>
+
+
+</body>
+</html>

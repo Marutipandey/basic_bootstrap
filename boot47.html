@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerts</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="boot47.css">
+    <script src="css/jquery.js"></script>
+    <script src="css/popper.js"></script>
+    <script src="css/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            $("#closebtn").click(function () {
+                $("#redbox").alert('close');
+            })
+            $("#closebtn").on("close-bs-alert", function () {
+                alert("close");
+            })
+            $("#closebtn").on("closed-bs-alert", function () {
+                alert("closed");
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h3 class="text-center">bootstrap Alerts</h3>
+        <div class="row py-3">
+            <div class="col-md-7">
+                <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    <button class="btn-close" data-bs-dismiss="alert"></button>
+                </div>
+                <!-- <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                  </div> -->
+
+                <div class="col-md-7">
+                    <div id="redbox" class="alert alert-success">
+                        <h2 class="alert-heading">Alert messege goes here</h2>
+                        <p>Lorem ipsum dolor <a class="alert-link" href=""> sit amet consectetur adipisicing elit.</a>
+                            Corrupti at est eveniet molestias eaque
+                            quidem dolores nulla ullam vitae error architecto, neque natus.</p>
+                    </div>
+                    <button id="closebtn" class="btn btn-danger">close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

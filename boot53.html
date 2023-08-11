@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scrollpy</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="boot53.css">
+    <script src="css/jquery.js"></script>
+    <script src="css/popper.js"></script>
+    <script src="css/bootstrap.min.js"></script>
+    <style>
+        body{
+            position: relative;
+        }
+        #section1 {
+            color: rgb(212, 228, 228);
+            background-color: rgb(138, 200, 16);
+            padding-top: 50px;
+            height: 500px;
+        }
+
+        #section2 {
+            color: rgb(212, 228, 228);
+            background-color: rgb(41, 193, 220);
+            padding-top: 50px;
+            height: 500px;
+        }
+
+        #section3 {
+            color: rgb(212, 228, 228);
+            background-color: rgb(199, 25, 86);
+            padding-top: 50px;
+            height: 500px;
+        }
+
+        #section4-1 {
+            color: rgb(212, 228, 228);
+            background-color: rgb(15, 46, 157);
+            padding-top: 50px;
+            height: 500px;
+        }
+
+        #section4-2 {
+            color: rgb(212, 228, 228);
+            background-color: rgb(116, 9, 216);
+            padding-top: 50px;
+            height: 500px;
+        }
+
+        #section4-3 {
+            color: rgb(212, 228, 228);
+            background-color: rgb(31, 129, 83);
+            padding-top: 50px;
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mynavbar">
+        <a class="navbar-brand" href="#">Websitename</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse"></button>
+        <ul class="nav">
+            <li class="nav-item"><a class="nav-link"  href="#section1">section1</a></li>
+            <li class="nav-item"><a class="nav-link"  href="#section2">section2</a></li>
+            <li class="nav-item"><a class="nav-link"  href="#section3">section3</a></li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                    href="">section4<span class="caret"></span></a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#section4-1">section4-1</a>
+                    <a class="dropdown-item" href="#section4-2">section4-2</a>
+                    <a class="dropdown-item" href="#section4-3">section4-3</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div data-bs-spy="scroll" data-bs-target="#mynavbar" data-bs-offset="0" class="scrollspy-example"
+        tabindex="0">
+        <div id="section1" class="container-fluid">
+            <h3>section1</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur repellat magni ipsam accusantium
+                temporibus a quia delectus vel quod natus, quis doloremque. Velit exercitationem voluptatem quibusdam
+                architecto, magnam placeat at recusandae enim minima neque qui?</p>
+        </div>
+        <div id="section2" class="container-fluid">
+            <h3>section2</h3>
+            <p>Lorem ipsum dolor Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur repellat magni
+                ipsam accusantium
+                temporibus a quia delectus vel quod natus, quis doloremque. Velit exercitationem voluptatem quibusdam
+                architecto, magnam placeat at Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur
+                repellat magni ipsam accusantium
+                temporibus a quia delectus vel quod natus, quis doloremque. Velit exercitationem voluptatem quibusdam
+                architecto, magnam placeat at sit, amet consectetur adipisicing elit. Consequatur repellat magni ipsam
+                accusantium
+                temporibus a quia delectus vel quod natus, quis doloremque. Velit exercitationem voluptatem quibusdam
+                architecto, magnam placeat at recusandae enim minima neque qui?</p>
+        </div>
+        <div id="section3" class="container-fluid">
+            <h3>section3</h3>
+            <p>Lorem ipsum dolor sit,Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur repellat
+                magni ipsam accusantium
+                temporibus a quia delectus vel quod natus, quis doloremque. Velit exercitationem voluptatem quibusdam
+                architecto, magnam placeat at Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur
+                repellat magni ipsam accusantium
+                temporibus a quia delectus vel quod natus, quis doloremque. Velit exercitationem voluptatem quibusdam
+                architecto, magnam placeat at amet consectetur adipisicing elit. Consequatur repellat magni ipsam
+                accusantium
+                temporibus a quia delectus vel quod natus, quis doloremque. Velit exercitationem voluptatem quibusdam
+                architecto, magnam placeat at recusandae enim minima neque qui?</p>
+        </div>
+        <div id="section4-1" class="container-fluid">
+            <h3>section4-1</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur repellat magni ipsam accusantium
+                temporibus a quia delectus vel quod natus, quis doloremque. Velit exercitationem voluptatem quibusdam
+                architecto, magnam placeaLorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur repellat
+                magni ipsam accusantium
+                temporibus a quia delectus vel quod natus, quis doloremque. Velit exercitationem voluptatem quibusdam
+                architecto, magnam placeat at Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur
+                repellat magni ipsam accusantium
+                temporibus a quia delectus vel quod natus, quis doloremque. Velit exercitationem voluptatem quibusdam
+                architecto, magnam placeat at t at recusandae enim minima neque qui?</p>
+        </div>
+        <div id="section4-2" class="container-fluid">
+            <h3>section4-2</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur repellat magni ipsam accusantium
+                temporibus a quia delectus vel quod natus, quis doloremque. Velit exercitationem voluptatem quibusdam
+                architecto, magnam placeat Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur
+                repellat magni ipsam accusantium
+                temporibus a quia delectus vel quod natus, quis doloremque. Velit exercitationem voluptatem quibusdam
+                architecto, magnam placeat at Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur
+                repellat magni ipsam accusantium
+                temporibus a quia delectus vel quod natus, quis doloremque. Velit exercitationem voluptatem quibusdam
+                architecto, magnam placeat at at recusandae enim minima neque qui?</p>
+        </div>
+        <div id="section4-3" class="container-fluid">
+            <h3>section4-3</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Consequatur repellat magni ipsam accusantium
+                temporibus a quia delectus vel quod natus, quis doloremque. Velit exercitationem voluptatem quibusdam
+                architecto, magnam placeat at Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur
+                repellat magni ipsam accusantium
+                temporibus a quia delectus vel quod natus, quis doloremque. Velit exercitationem voluptatem quibusdam
+                architecto, magnam placeat at adipisicing elit. Consequatur repellat magni ipsam accusantium
+                temporibus a quia delectus vel quod natus, quis doloremque. Velit exercitationem voluptatem quibusdam
+                architecto, magnam placeat at recusandae enim minima neque qui?</p>
+        </div>
+    </div>
+</body>
+
+</html>

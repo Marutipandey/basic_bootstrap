@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 120px;
+            height: 120px;
+            border: solid black;
+            
+        }
+        #box1{
+            position: relative;
+            
+            top: 60px;
+            background-color: red;
+        }
+        #box2{
+            position: relative;
+            z-index: 34px; /*z-index jisaka jyada hoga vo value jyada so hoga but esame position jaruri hota hai dena*/
+            top: 55px;
+            background-color: green;
+         /* visibility: hidden; esame space rahega aur value gayab ho jata hai */
+        /*   display: none;  esame space bhi aur element bhi remove ho jate hai  */
+        }
+        #box3{
+            position: relative;
+            z-index: 100px;
+            background-color: yellow;
+        }
+        #box4{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>

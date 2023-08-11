@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapse and Accordion</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="boot49.css">
+    <script src="css/jquery.js"></script>
+    <script src="css/popper.js"></script>
+    <script src="css/bootstrap.min.js"></script>
+    
+</head>
+
+<body>
+    <div class="container">
+        <div class="row py-3">
+            <div class="col-7">
+                <div class="accordion" id="accordionexample">
+                    <div class="card">
+                        <div class="card-header">
+                            <button class="btn btn-link btn-block text-left" data-bs-toggle="collapse"
+                                data-bs-target="#collapseone">Heading Number One</button>
+                        </div>
+                        <div class="collapse show" id="collapseone" data-bs-parent="#accordionexample">
+                            <div class="card-body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, enim.
+                            </div>
+                        </div>
+                    </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <button class="btn btn-link btn-block text-left collapsed " data-bs-toggle="collapse"
+                            data-bs-target="#collapsetwo">Heading Number Two</button>
+                    </div>
+                    <div class="collapse" id="collapsetwo" data-bs-parent="#accordionexample">
+                        <div class="card-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, enim.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <button class="btn btn-link btn-block text-left collapsed" data-bs-toggle="collapse"
+                            data-bs-target="#collapsethree">Heading Number Three</button>
+                    </div>
+                    <div class="collapse" id="collapsethree" data-bs-parent="#accordionexample">
+                        <div class="card-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, enim.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--  <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target=".Multi-collapse">click</button>
+                 <div class="collapse" id="mycollapse">
+                    <div class="mt-3 card card-body ">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, sunt?</p>
+                    </div> -->
+            <!-- <a href="" class="btn btn-success" data-bs-toggle="collapse" data-bs-target=".Multi-collapse">click here</a> -->
+            <!-- <div class="collapse Multi-collapse" id="">
+                        <div class="mt-3 card card-body ">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, sunt?</p>
+                        </div> -->
+             <!-- <div class="collapse Multi-collapse" id="">
+            <div class="mt-3 card card-body ">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, sunt?</p>
+            </div>
+
+            </div>  -->
+        </div>
+    </div>
+
+
+
+    
+</body>
+
+</html>

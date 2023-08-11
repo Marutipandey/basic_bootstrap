@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors & more designing</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            background-color: rgb( blue);
+            padding: 20px;
+            margin: 34px;
+            width:666px;
+        }
+
+        a{
+            text-decoration: none; 
+            /*underline remove ho jayega*/
+            color: black;
+        }
+        a:hover{
+            color: green;
+            background-color: yellow;
+
+        }
+        a:visited{
+            background-color: yellow;
+        }
+        a.active{
+            background-color:darkblue
+        }
+        
+        .btn{
+            background-color: rgb(15, 15, 204);
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 9px;
+            border-radius: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+        }
+        .btn:hover{
+            color: darkgoldenrod;
+            background-color: rgb(223,245,201);
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+    <h3>This is my heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet.
+        
+    </p>
+     <a href="http://face.com"class="btn">Readmore</a>
+     <button class="btn">Contact us</button>
+</div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer';
+        }
+        .item{
+            background-color: rgb(237, 237, 18);
+            border: 3px solid black;
+        }
+        #navbar{
+           grid-area: navbar;
+        }
+        #section{
+            grid-area: section;
+        }
+        #aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            Home About Contact Us
+        </div>
+
+        <div id="section" class="item">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas maxime fugit esse.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente, eius eligendi. Amet?
+        </div>
+
+        <div id="aside" class="item">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas maxime fugit esse.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente, eius eligendi. Amet?
+        </div>
+
+
+        <footer class="item">Lorem ipsum dolor sitres</footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: blue;
+        }
+        #box{
+            display: flex;
+            width: 200px;
+            height: 300px;
+            border: 2px solid palevioletred;
+            justify-content: center;
+            align-items: center;
+            transition-property: background-color;
+            transition-duration: 1s;
+            transition-delay: -3s;  /*esase properties jaldi lagu hota hai */
+            color: yellowgreen;
+            transition-timing-function: ease-in-out;  
+        /*  transition: background-color 1s ease-in-out 0s;     Transition short hand property in one line  */
+        /*  transition: all 1s ease-in-out 3s;  all means height width sabhi change hoga   Transition short hand property in one line  */
+
+        }
+        #box:hover{
+            background-color: aqua;
+            height: 300px;
+            width: 300px;
+            border-radius: 25px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div id="box">
+        Radhika
+    </div>
+</div>
+</body>
+</html>

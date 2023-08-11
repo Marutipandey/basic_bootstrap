@@ -1,0 +1,47 @@
+  
+
+  ul li .content h5{
+    visibility: visible;
+  }
+  ul{
+    margin:0;
+    padding: 0;
+    display: flex;
+  }
+
+  ul li{
+    position: relative;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgb(51, 93, 211);
+    margin: 0 250px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  ul li:hover{
+    background: #3b58ff;
+    
+  }
+
+  ul li .content{
+    position: absolute;
+    bottom: 55;
+    width: 400px;
+    background: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 2px solid rgb(146, 138, 138);
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  ul li:hover .content{
+    visibility: visible;
+    opacity: 1;
+  }
+

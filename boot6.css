@@ -1,0 +1,12 @@
+.container{
+    border: 2px solid rgb(128, 41, 0);
+}
+#col1{
+    border: 2px solid black;
+    background-color: palevioletred;
+}
+
+#col2{
+    border: 2px solid black;
+    background-color: purple;
+}

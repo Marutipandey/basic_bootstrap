@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: red;
+        }
+        .box{
+            background-color: yellow;
+            width: 150px;
+            height: 250px;
+            position: relative;
+            animation-name: priya1 ;
+            animation-name: priya2 ;
+            animation-duration: 2s;
+            animation-iteration-count: 3;    
+        /*    animation-iteration-count: infinite;  */
+        /*    animation-fill-mode: forwards; /*yah hamesha ke liye apply rahega  */    
+            animation-fill-mode: alternate;
+            animation-timing-function: ease-in;
+       /*     animation-delay: 3s;  three second ke bad chalu ho jayega   */
+            animation-direction: reverse;
+       }  
+       @keyframes priya2{
+           0%{
+               top: 0px;
+               left: 0px;
+           }25%{
+               top: 250px;
+               left: 0px;
+           }75%{
+            top: 250px;
+            left: 250px;
+           }100%{
+            top: 0px;
+            left: 250px;
+           }
+       } 
+        @keyframes priya1{
+        from{
+               width: 200px;
+            }
+            to{
+               width: 400px; 
+            }
+        }
+    </style>
+</head>
+<body>
+      <div class="container">
+          <div class="box">
+              Radhe Shyam
+          </div>
+      </div>
+</body>
+</html>

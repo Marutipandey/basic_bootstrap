@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="boot46.css">
+
+    <script src="css/jquery.js"></script>
+    <script src="css/popper.js"></script>
+    <script src="css/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            $('#example').popover({
+                html: true,
+                animation: false,
+                placement: "bottom",
+                title: "<h1>Popover this is a popover title Two</h1>",
+                cantent: "this is bootstrap"
+            });
+            /* $('#hide').click(function(){
+                $('#example').popover('hide')
+            });
+
+            $('#show').click(function(){
+                $('#example').popover('show')
+            }); */
+            $('#example').on("show.bs.popover",function(){
+                alert("Show");
+            });
+            $('#example').on("shown.bs.popover",function(){
+                alert("Shown");
+            });
+            $('#example').on("hide.bs.popover",function(){
+                alert("Hide");
+            });
+            $('#example').on("hidden.bs.popover",function(){
+                alert("Hidden");
+            });
+            $('#example').on("inserted.bs.popover",function(){
+                alert("inserted");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container py-5">
+        <div class="row p-5 text-center">
+            <div class="col">
+                <button class="btn btn-primary" id="example" data-toggle="popover">Popover</button>
+
+                <button class="btn btn-primary" id="hide">Hide</button>
+
+                <button class="btn btn-primary" id="show">Show</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+.container{
+    border: 2px solid black;
+}
+.accordion .btn{
+    background: green;
+}
+.accordion .btn.collapsed{
+    background: aqua;
+}
+
